@@ -1,8 +1,11 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1 {
-  justify-content: center;
+
+h1, footer {
+  text-align: center;
+  color: white;
+  background-color: lightcoral;
 }
 
 .flag {
@@ -15,49 +18,45 @@ h1 {
 .flag #top {
   background-color: #000000;
   height: 33.333%;
-  animation-name:flag-change1;
-  animation: 4s linear 0 infinite;
-  animation-play-state: paused;
 }
 
 .flag #middle {
   background-color: #ff0000;
   height: 33.333%;
-  animation-name:flag-change2;
-  animation: 4s linear 0 infinite;
-  animation-play-state: paused;
 }
 
 .flag #bottom {
   background-color: #ffcc00;
   height: 33.333%;
-  animation-name: flag-change3;
-  animation: 4s linear 0 infinite;
-  animation-play-state: paused;
 }
-
-#german:hover {
-  animation-play-state: running;
+.flag:hover #top{
+  animation: flag-change1 4s infinite;
+}
+.flag:hover #middle{
+  animation: flag-change2 4s infinite;
+}
+.flag:hover #bottom{
+  animation: flag-change3 4s infinite;
 }
 
 @keyframes flag-change1 {
   0%   {background-color: #000000;}
   25%  {background-color: #ed2938;}
   50%  {background-color: #AE1C28;}
-  100% {background-color: green;}
+  100% {background-color: #ffffff;}
 }
 
 @keyframes flag-change2 {
   0%   {background-color: #ff0000;}
   25%  {background-color: #ffffff;}
   50%  {background-color: #ffffff;}
-  100% {background-color: blue;}
+  100% {background-color: #01AA05;}
 }
 @keyframes flag-change3 {
   0%   {background-color: #ffcc00;}
   25%  {background-color: #ed2938;}
   50%  {background-color: #21478A;}
-  100% {background-color: #ffffff;}
+  100% {background-color: #FE0302;}
 }
 
 #french {
@@ -79,4 +78,40 @@ h1 {
  display: flex-end;
  background-color: #ef4135;
  width: 33.33%;
+}
+.flag:hover #left{
+  animation: flag-change4 4s infinite;
+}
+.flag:hover #mid{
+  animation: flag-change5 4s infinite;
+}
+.flag:hover #right{
+  animation: flag-change6 4s infinite;
+}
+
+@keyframes flag-change4 {
+  0%   {background-color: #001489;}
+  25%  {background-color: #000000;}
+  50%  {background-color: #149C62;}
+  100% {background-color: #CE1227;}
+}
+
+@keyframes flag-change5 {
+  0%   {background-color: #ffffff;}
+  25%  {background-color: #FAE043;}
+  50%  {background-color: #ffffff;}
+  100% {background-color: #FDD115;}
+}
+@keyframes flag-change6 {
+  0%   {background-color: #ef4135;}
+  25%  {background-color: #ED2838;}
+  50%  {background-color: #FE873D;}
+  100% {background-color: #00945F;}
+}
+
+
+
+
+footer {
+  position: sticky;
 }
