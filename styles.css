@@ -31,15 +31,15 @@ h1, footer {
   height: 33.333%;
 }
 .flag:hover #top{
-  animation: flag-change1 4s infinite;
+  animation: flag-change1 8s infinite;
 }
 .flag:hover #middle{
-  animation: flag-change2 4s infinite;
+  animation: flag-change2 8s infinite;
 }
 .flag:hover #bottom{
-  animation: flag-change3 4s infinite;
+  animation: flag-change3 8s infinite;
 }
-
+/* Keyframes with four transitions to differing flags */
 @keyframes flag-change1 {
   0%   {background-color: #000000;}
   25%  {background-color: #ed2938;}
@@ -81,13 +81,13 @@ h1, footer {
  width: 33.33%;
 }
 .flag:hover #left{
-  animation: flag-change4 4s infinite;
+  animation: flag-change4 8s infinite;
 }
 .flag:hover #mid{
-  animation: flag-change5 4s infinite;
+  animation: flag-change5 8s infinite;
 }
 .flag:hover #right{
-  animation: flag-change6 4s infinite;
+  animation: flag-change6 8s infinite;
 }
 
 @keyframes flag-change4 {
